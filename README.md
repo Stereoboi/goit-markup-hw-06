@@ -1,1 +1,1 @@
-# goit-markup-hw-06
+# Stereoboi-goit-markup-hw-03
