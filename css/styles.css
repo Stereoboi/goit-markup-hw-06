@@ -819,8 +819,12 @@ input[name="mail"] {
   cursor: pointer;
 }
 
-.close-btn:hover {
-  background-color: var(--accent-color);
+.close-modal {
+  transition: fill var(--animation-time) var(--cubic);
+}
+
+.close-modal:hover {
+  fill: var(--accent-color);
 }
 
 .modal-title {
@@ -862,6 +866,8 @@ input[name="mail"] {
   position: absolute;
   top: 11px;
   left: 12px;
+  width: 18px;
+  height: 18px;
   cursor: pointer;
   fill: var(--title-text-color);
 
@@ -943,4 +949,52 @@ textarea::placeholder {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.contract {
+  position: relative;
+  text-decoration: none;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--accent-color);
+}
+
+.contract::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  transform: translateY(-5px);
+  background-color: var(--accent-color);
+}
+
+.modal-wrap .about-text {
+  margin-left: 7px;
+}
+.checkbox {
+  appearance: none;
+  position: absolute;
+}
+
+.checked {
+  display: block;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  border: 2px solid var(--title-text-color);
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 13px;
+
+  transition: var(--animation-time) var(--cubic);
+}
+
+.checkbox:checked + .checked {
+  background-color: var(--accent-color);
+  border: transparent;
 }
