@@ -257,7 +257,7 @@ footer .logo {
 }
 
 .sign-up {
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .footer-wrap {
@@ -992,6 +992,7 @@ textarea::placeholder {
   display: inline-block;
   cursor: pointer;
   margin-left: 13px;
+  fill: var(--primary-white-color);
 
   transition: var(--animation-time) var(--cubic);
 }
